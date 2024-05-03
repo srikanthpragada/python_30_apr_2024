@@ -5,7 +5,10 @@ price = int(data)   # convert str to int
 discount = price * 10 // 100   # Caculate 10% discount
 net_price = price - discount 
 
-print('Net price =', net_price)
+print(f'Price     : {price:6}')
+print(f'Discount  : {discount:6}')
+print(f'Net price : {net_price:6}')
+
 
 
 
