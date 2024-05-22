@@ -8,5 +8,8 @@ class Course:
     
 c = Course("AWS", 5000)
 print(c.getfee())
-print(c.__fee)
+print(c._Course__fee)
+print(c.__dict__)
+
+
 
