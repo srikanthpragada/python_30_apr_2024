@@ -2,11 +2,18 @@
 class Product:
     # class attribute or static attribute 
     taxrate = 15 
+    count = 0
 
+    @staticmethod
+    def getcount():
+        return Product.count 
+    
     def __init__(self, name, price = 0) -> None:
         # Object attributes 
         self.name = name 
         self.price = price 
+        Product.count += 1
+
        
     def getprice(self):
         return self.price 
