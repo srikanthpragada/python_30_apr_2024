@@ -1,4 +1,7 @@
-class Employee:
+from abc import abstractmethod, ABC
+
+# Abstract class 
+class Employee(ABC):
     def __init__(self, name, email) -> None:
         self.name = name 
         self.email = email 
@@ -15,6 +18,9 @@ class Employee:
         pos = self.name.find(' ')
         return self.name[:pos]
     
+    @abstractmethod 
+    def getsalary(self):
+        pass 
 
 class FTEmployee(Employee):
     def __init__(self, name, email, salary) -> None:
