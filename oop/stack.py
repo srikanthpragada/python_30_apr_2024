@@ -27,5 +27,10 @@ s = Stack()
 print(s.empty)
 s.push(10)
 s.push(20)
+
+for v in s:
+    print(v)
+
+
 print(s.peek(), s.length)
 print(s.pop() , s.length)
