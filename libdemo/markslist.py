@@ -6,8 +6,7 @@ def isName(st):
     return True 
 
 
-
-f = open(r"libdemo\marks.txt", "rt")
+f = open(r"d:\classroom\python\libdemo\marks.txt", "rt")
 
 for line in f.readlines():
     parts = line.strip().split(",")
