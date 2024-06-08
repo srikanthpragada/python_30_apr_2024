@@ -1,0 +1,1 @@
+DBNAME = r"d:\classroom\python\hr.db"
