@@ -7,7 +7,8 @@ import dbutil
 
 # Convert tuple with emp details to dict
 def emp_to_dict(emp):
-    return {"id": emp[0], "name": emp[1], "job": emp[2], "salary": emp[3]}
+    return {"id": emp[0], "name": emp[1], 
+            "job": emp[2], "salary": emp[3]}
 
 
 employees = []
@@ -24,6 +25,6 @@ con.close()
 print(json.dumps(employees)) # list of dict to array of json objects
 
 # Write to file
-f = open("employees.json", "wt")
+f = open(r"dbapi\employees.json", "wt")
 json.dump(employees, f)
 f.close()

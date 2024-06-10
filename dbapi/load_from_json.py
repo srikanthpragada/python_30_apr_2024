@@ -4,7 +4,7 @@ import sqlite3
 import json
 import dbutil
 
-f = open("newemployees.json", "rt")
+f = open(r"dbapi\newemployees.json", "rt")
 employees = json.load(f)    # Convert array of JSON objects to list of dict
 
 con = sqlite3.connect(dbutil.DBNAME)
